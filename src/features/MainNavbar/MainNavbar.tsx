@@ -1,8 +1,7 @@
 import { memo, type FC } from 'react'
-import { Button, Navbar, Swap } from 'react-daisyui'
+import { Button, Navbar } from 'react-daisyui'
 import { ReactComponent as HambugerIcon } from '@/assets/hamburger.svg'
-import { ReactComponent as SunIcon } from '@/assets/sun.svg'
-import { ReactComponent as MoonIcon } from '@/assets/moon.svg'
+import { ThemeSwitcher } from '../ThemeSwitcher'
 
 export const MainNavbar: FC = memo(() => {
   return (
@@ -26,18 +25,11 @@ export const MainNavbar: FC = memo(() => {
         >
           <HambugerIcon className="h-8 w-8" />
         </Button>
-        <Button
-          shape="circle"
+        <ThemeSwitcher
           color="ghost"
-          className="md:inline-flex hidden"
-        >
-          <Swap
-            rotate
-            active
-            onElement={<SunIcon className="h-6 w-6" />}
-            offElement={<MoonIcon className="h-6 w-6" />}
-          />
-        </Button>
+          shape="circle"
+          className="hidden md:flex md:justify-center md:items-center"
+        />
       </Navbar.End>
     </Navbar>
   )
