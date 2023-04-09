@@ -7,11 +7,10 @@ import { selectTheme } from './appSlice'
 export const App: FC = memo(() => {
   const theme = useAppSelector(selectTheme)
   return (
-    <Theme
-      dataTheme={theme}
-      className="max-w-[1600px] mx-auto"
-    >
-      <MainNavbar />
+    <Theme dataTheme={theme}>
+      <div className="max-w-[1600px] mx-auto">
+        <MainNavbar />
+      </div>
     </Theme>
   )
 })
