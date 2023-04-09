@@ -1,0 +1,6 @@
+{
+  "name": "custom-rules",
+  "description": "Custom ESLint rules for the repo",
+  "version": "1.0.0",
+  "author": "Front End Engineers"
+}
