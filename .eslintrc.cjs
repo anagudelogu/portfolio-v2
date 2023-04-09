@@ -7,7 +7,7 @@ module.exports = {
     'plugin:react/recommended',
     'standard-with-typescript',
     'plugin:react/jsx-runtime',
-    'prettier',
+    'plugin:prettier/recommended',
   ],
   overrides: [],
   parserOptions: {
@@ -20,7 +20,7 @@ module.exports = {
       version: 'detect',
     },
   },
-  plugins: ['react', 'custom-rules'],
+  plugins: ['react', 'custom-rules', 'prettier'],
   rules: {
     'comma-dangle': ['error', 'always-multiline'],
     '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
