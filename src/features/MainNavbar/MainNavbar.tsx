@@ -2,14 +2,13 @@ import { memo, type FC } from 'react'
 import { Button, Navbar } from 'react-daisyui'
 import { ReactComponent as HambugerIcon } from '@/assets/hamburger.svg'
 import { ThemeSwitcher } from '../ThemeSwitcher'
+import { Logo } from '../Logo'
 
 export const MainNavbar: FC = memo(() => {
   return (
     <Navbar className="px-4 sticky top-0 z-20 bg-base-100">
       <Navbar.Start>
-        <span className="text-2xl lg:text-3xl">
-          <strong>Andres</strong>DEV
-        </span>
+        <Logo />
       </Navbar.Start>
       <Navbar.Center className="hidden md:block">
         <Button color="ghost">Projects</Button>
