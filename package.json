@@ -10,9 +10,11 @@
     "lint": "eslint src/"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.3",
     "daisyui": "^2.51.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
     "vite-plugin-svgr": "^2.4.0"
   },
   "devDependencies": {
@@ -27,6 +29,7 @@
     "eslint-config-prettier": "^8.7.0",
     "eslint-config-standard-with-typescript": "^34.0.0",
     "eslint-plugin-custom-rules": "./lib/rules",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "postcss": "^8.4.21",
     "prettier": "2.8.4",
