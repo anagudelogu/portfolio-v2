@@ -3,8 +3,10 @@ import { Button, Navbar } from 'react-daisyui'
 import { ReactComponent as HambugerIcon } from '@/assets/hamburger.svg'
 import { ThemeSwitcher } from '../ThemeSwitcher'
 import { Logo } from '../Logo'
+import { useMobileDrawer } from '@/hooks'
 
 export const MainNavbar: FC = memo(() => {
+  const { handleOpen } = useMobileDrawer()
   return (
     <Navbar className="px-4 sticky top-0 z-20 bg-base-100">
       <Navbar.Start>
@@ -21,6 +23,7 @@ export const MainNavbar: FC = memo(() => {
           shape="circle"
           color="ghost"
           className="md:hidden"
+          onClick={handleOpen}
         >
           <HambugerIcon className="h-8 w-8" />
         </Button>

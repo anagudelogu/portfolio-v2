@@ -1,16 +1,22 @@
 import { memo, type FC } from 'react'
-import { MainNavbar } from '@/features'
-import { Theme } from 'react-daisyui'
+import { MainNavbar, MobileDrawer } from '@/features'
+import { Drawer, Theme } from 'react-daisyui'
 import { useAppSelector } from '@/hooks'
-import { selectTheme } from './appSlice'
+import { selectMenuOpen, selectTheme } from './appSlice'
 
 export const App: FC = memo(() => {
   const theme = useAppSelector(selectTheme)
+  const mobileMenuOpen = useAppSelector(selectMenuOpen)
   return (
     <Theme dataTheme={theme}>
-      <div className="max-w-[1600px] mx-auto">
-        <MainNavbar />
-      </div>
+      <Drawer
+        side={<MobileDrawer />}
+        open={mobileMenuOpen}
+      >
+        <div className="max-w-[1600px] mx-auto">
+          <MainNavbar />
+        </div>
+      </Drawer>
     </Theme>
   )
 })
