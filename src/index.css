@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.btn {
+.btn-ghost {
   @apply normal-case text-lg font-normal;
+}
+
+.btn-link {
+  @apply normal-case no-underline;
 }
