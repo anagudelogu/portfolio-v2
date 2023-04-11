@@ -1,15 +1,22 @@
 import i18next from 'i18next'
 import { initReactI18next } from 'react-i18next'
-import translation from './en/translation.json'
+import LanguageDetector from 'i18next-browser-languagedetector'
+import enTranslation from './en/translation.json'
 
 export const resources = {
   en: {
-    translation,
+    translation: enTranslation,
   },
 }
 
-void i18next.use(initReactI18next).init({
-  lng: 'en',
-  debug: import.meta.env.DEV,
-  resources,
-})
+void i18next
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    fallbackLng: 'en',
+    debug: import.meta.env.DEV,
+    interpolation: {
+      escapeValue: false,
+    },
+    resources,
+  })
