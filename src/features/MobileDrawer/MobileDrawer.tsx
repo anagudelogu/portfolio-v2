@@ -4,9 +4,11 @@ import { ReactComponent as CloseIcon } from '@/assets/close.svg'
 import { Logo } from '../Logo'
 import { ThemeSwitcher } from '../ThemeSwitcher'
 import { useMobileDrawer } from '@/hooks'
+import { useTranslation } from 'react-i18next'
 
 export const MobileDrawer: FC = memo(() => {
   const { handleClose } = useMobileDrawer()
+  const { t } = useTranslation()
   return (
     <div className="h-screen w-screen relative bg-base-100 flex flex-col justify-evenly px-8">
       <Button
@@ -23,29 +25,29 @@ export const MobileDrawer: FC = memo(() => {
           onClick={handleClose}
           className="text-4xl font-bold"
         >
-          Projects
+          {t('navigation.projects')}
         </a>
         <a
           onClick={handleClose}
           className="text-4xl font-bold"
         >
-          Experience
+          {t('navigation.experience')}
         </a>
         <a
           onClick={handleClose}
           className="text-4xl font-bold"
         >
-          About
+          {t('navigation.about')}
         </a>
         <a
           onClick={handleClose}
           className="text-4xl font-bold"
         >
-          Contact
+          {t('navigation.contact')}
         </a>
       </div>
       <div className="flex flex-col gap-4">
-        <span>Theme</span>
+        <span>{t('theme')}</span>
         <ThemeSwitcher
           color="ghost"
           shape="circle"
