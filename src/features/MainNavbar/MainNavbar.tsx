@@ -5,6 +5,7 @@ import { ThemeSwitcher } from '../ThemeSwitcher'
 import { Logo } from '../Logo'
 import { useMobileDrawer } from '@/hooks'
 import { useTranslation } from 'react-i18next'
+import { LanguageSwitcher } from '../LanguageSwitcher'
 
 export const MainNavbar: FC = memo(() => {
   const { handleOpen } = useMobileDrawer()
@@ -20,7 +21,7 @@ export const MainNavbar: FC = memo(() => {
         <Button color="ghost">{t('navigation.about')}</Button>
         <Button color="ghost">{t('navigation.contact')}</Button>
       </Navbar.Center>
-      <Navbar.End>
+      <Navbar.End className="gap-4">
         <Button
           shape="circle"
           color="ghost"
@@ -29,6 +30,7 @@ export const MainNavbar: FC = memo(() => {
         >
           <HambugerIcon className="h-8 w-8" />
         </Button>
+        <LanguageSwitcher className="hidden md:block" />
         <ThemeSwitcher
           color="ghost"
           shape="circle"

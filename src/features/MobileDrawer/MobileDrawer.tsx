@@ -5,6 +5,7 @@ import { Logo } from '../Logo'
 import { ThemeSwitcher } from '../ThemeSwitcher'
 import { useMobileDrawer } from '@/hooks'
 import { useTranslation } from 'react-i18next'
+import { LanguageSwitcher } from '../LanguageSwitcher'
 
 export const MobileDrawer: FC = memo(() => {
   const { handleClose } = useMobileDrawer()
@@ -46,13 +47,19 @@ export const MobileDrawer: FC = memo(() => {
           {t('navigation.contact')}
         </a>
       </div>
-      <div className="flex flex-col gap-4">
-        <span>{t('theme')}</span>
-        <ThemeSwitcher
-          color="ghost"
-          shape="circle"
-          className="flex justify-center items-center"
-        />
+      <div className="flex gap-8 items-center">
+        <div className="flex flex-col gap-4">
+          <span>{t('theme')}</span>
+          <ThemeSwitcher
+            color="ghost"
+            shape="circle"
+            className="flex justify-center items-center"
+          />
+        </div>
+        <div className="flex flex-col gap-4">
+          <span>{t('language')}</span>
+          <LanguageSwitcher />
+        </div>
       </div>
     </div>
   )

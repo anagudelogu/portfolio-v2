@@ -24,3 +24,5 @@ void i18next
     },
     resources,
   })
+
+export default i18next
