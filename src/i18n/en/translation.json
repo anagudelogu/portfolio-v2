@@ -1,0 +1,11 @@
+{
+  "hello": "Hello world!",
+  "navigation": {
+    "projects": "Projects",
+    "experience": "Experience",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "theme": "Theme",
+  "language": "Language"
+}
