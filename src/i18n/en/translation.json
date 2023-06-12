@@ -1,5 +1,4 @@
 {
-  "hello": "Hello world!",
   "navigation": {
     "projects": "Projects",
     "experience": "Experience",
@@ -7,5 +6,9 @@
     "contact": "Contact"
   },
   "theme": "Theme",
-  "language": "Language"
+  "language": "Language",
+  "hero": {
+    "title": "<0>Hi, I'm Andres</0><1>FRONTEND DEVELOPER</1>",
+    "description": "Detail-oriented and team-focused professional committed to transforming product ideas into outstanding user experiences."
+  }
 }

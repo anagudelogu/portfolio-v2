@@ -1,3 +1,14 @@
 {
-  "hello": "Hola Mundo!"
+  "navigation": {
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "about": "Sobre mi",
+    "contact": "Contacto"
+  },
+  "theme": "Tema",
+  "language": "Idioma",
+  "hero": {
+    "title": "<0>Hola, Soy Andrés</0><1>FRONTEND DEVELOPER</1>",
+    "description": "Profesional centrado en los detalles y enfocado en el trabajo en equipo, comprometido en transformar ideas de productos en experiencias de usuario excepcionales."
+  }
 }
