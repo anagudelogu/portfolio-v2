@@ -16,8 +16,8 @@ export const MainNavbar: FC = memo(() => {
         <Logo />
       </Navbar.Start>
       <Navbar.Center className="hidden md:block">
-        <Button color="ghost">{t('navigation.projects')}</Button>
         <Button color="ghost">{t('navigation.experience')}</Button>
+        <Button color="ghost">{t('navigation.projects')}</Button>
         <Button color="ghost">{t('navigation.about')}</Button>
         <Button color="ghost">{t('navigation.contact')}</Button>
       </Navbar.Center>

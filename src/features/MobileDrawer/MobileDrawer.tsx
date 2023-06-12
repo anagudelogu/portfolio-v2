@@ -26,13 +26,13 @@ export const MobileDrawer: FC = memo(() => {
           onClick={handleClose}
           className="text-4xl font-bold"
         >
-          {t('navigation.projects')}
+          {t('navigation.experience')}
         </a>
         <a
           onClick={handleClose}
           className="text-4xl font-bold"
         >
-          {t('navigation.experience')}
+          {t('navigation.projects')}
         </a>
         <a
           onClick={handleClose}
