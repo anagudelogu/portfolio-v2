@@ -1,3 +1,4 @@
+export * from './Hero'
 export * from './LanguageSwitcher'
 export * from './Logo'
 export * from './MainNavbar'
