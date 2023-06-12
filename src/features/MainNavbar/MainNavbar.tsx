@@ -21,7 +21,7 @@ export const MainNavbar: FC = memo(() => {
         <Button color="ghost">{t('navigation.about')}</Button>
         <Button color="ghost">{t('navigation.contact')}</Button>
       </Navbar.Center>
-      <Navbar.End className="gap-4">
+      <Navbar.End className="xl:gap-2">
         <Button
           shape="circle"
           color="ghost"
