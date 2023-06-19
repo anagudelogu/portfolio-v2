@@ -11,7 +11,7 @@ export const MobileDrawer: FC = memo(() => {
   const { handleClose } = useMobileDrawer()
   const { t } = useTranslation()
   return (
-    <div className="h-screen w-screen relative bg-base-100 flex flex-col justify-evenly px-8">
+    <div className="h-[100dvh] w-screen relative bg-base-100 flex flex-col justify-evenly px-8">
       <Button
         color="ghost"
         shape="circle"
