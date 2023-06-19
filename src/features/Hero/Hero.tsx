@@ -6,7 +6,7 @@ import { Trans, useTranslation } from 'react-i18next'
 export const Hero: FC = memo(() => {
   const { t } = useTranslation()
   return (
-    <section className="min-h-[calc(100vh-64px)] w-full flex flex-col justify-center items-center gap-5 lg:flex-row-reverse lg:justify-between">
+    <section className="min-h-[calc(100dvh-64px)] w-full flex flex-col justify-center items-center gap-5 lg:flex-row-reverse lg:justify-between">
       <Avatar
         shape="circle"
         className="max-w-xs sm:max-w-sm lg:max-w-md lg:w-full xl:max-w-lg ring-2 ring-base-200 ring-offset-4 ring-offset-base-100 rounded-full"
