@@ -1,5 +1,5 @@
 import { memo, type FC } from 'react'
-import { Hero, MainNavbar, MobileDrawer } from '@/features'
+import { Experience, Hero, MainNavbar, MobileDrawer } from '@/features'
 import { Drawer, Theme } from 'react-daisyui'
 import { useAppSelector } from '@/hooks'
 import { selectMenuOpen, selectTheme } from './appSlice'
@@ -18,6 +18,7 @@ export const App: FC = memo(() => {
           <MainNavbar />
           <main className="px-4 max-w-[1440px] mx-auto xl:px-8">
             <Hero />
+            <Experience />
           </main>
         </div>
       </Drawer>
