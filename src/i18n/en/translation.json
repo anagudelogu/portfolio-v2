@@ -10,5 +10,15 @@
   "hero": {
     "title": "<0>Hi, I'm Andres</0><1>FRONTEND DEVELOPER</1>",
     "description": "Detail-oriented and team-focused professional committed to transforming product ideas into outstanding user experiences."
+  },
+  "experience": {
+    "title": "EXPERIENCE",
+    "subtitle": "My journey as a developer",
+    "hoololi_title": "Frontend Developer.",
+    "hoololi_date": "Oct 2022 - Present",
+    "microverse_title": "Code Reviewer.",
+    "microverse_date": "Oct 2022 - Present",
+    "resume": "Resume",
+    "remote": "Remote"
   }
 }

@@ -1,3 +1,4 @@
+export * from './Experience'
 export * from './Hero'
 export * from './LanguageSwitcher'
 export * from './Logo'
